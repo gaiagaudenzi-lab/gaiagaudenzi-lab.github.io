@@ -1,7 +1,7 @@
 # name: Gaia Gaudenzi
 markdown: kramdown
 title: Gaia Gaudenzi # your name (or website title) here
-logo: "/images/gaia_image.jpeg?raw=true" # your photo (or logo) here
+logo: "/images/gaia_image.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)  
 theme: jekyll-theme-minimal
 permalink: /blog/:year/:month/:day/:title
