@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="icon" href="/images/gg.png">
+
+
+	  	 <head>
+		 	<title>{{ page.title }}</title> 
+			<link rel="stylesheet" type="text/css" href="/css/main.css"  >
+		</head> 
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/" >Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+				<li><a href="/stata_training">Resources to learn Stata</a></li>
+				<li><a href="/portfolio">My photo portfolio</a></li>
+	    		</ul>
+			</nav>
+</body>
