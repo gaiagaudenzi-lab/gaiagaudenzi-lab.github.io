@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="icon" href="/images/gg.png">
-
-
+	
+	<style>
+	.ref {
+	  font-size: 0.5em;
+	  padding: none;
+	}
+	</style>
+    
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	
+    <![endif]-->
+  </head>
+ <!-- <body>-->
 	  	 <head>
 		 	<title>{{ page.title }}</title> 
 			<link rel="stylesheet" type="text/css" href="/css/main.css"  >
@@ -22,4 +36,11 @@
 				<li><a href="/portfolio">My photo portfolio</a></li>
 	    		</ul>
 			</nav>
-</body>
+    
+   
+     
+      <section>
+	      
+	      
+
+      {{ content }}
