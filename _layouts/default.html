@@ -42,22 +42,19 @@
         {% if site.logo %}
 	     <div class="circular"><img src="{{site.logo | relative_url}}" alt="Logo" height="auto" width="200" style="border-radius:50%"/></div>
         {% endif %}
-li {
-   display: inline-block;
-}
 	
 <ul>
-	<li><a href="mailto:gaiagaudenzi9@gmail.com" target="_blank" class=“ref”>gaiagaudenzi9@gmail.com</a></li>     
-        <li><a href="{{ site.github.owner_url }}" class=“ref”>View My GitHub Profile</a></li>    
-	<li><a href="https://www.linkedin.com/in/gaiagaudenzi/" target="_blank" class=“ref”>My Linkedin profile</a></li>
-	<li><a href="https://twitter.com/GaudenziGaia" target="_blank" class=“ref”>My Twitter profile</a></li>
+	<p><a href="mailto:gaiagaudenzi9@gmail.com" target="_blank" class=“ref”>gaiagaudenzi9@gmail.com</a></p>     
+        <p><a href="{{ site.github.owner_url }}" class=“ref”>View My GitHub Profile</a></p>    
+	<p<a href="https://www.linkedin.com/in/gaiagaudenzi/" target="_blank" class=“ref”>My Linkedin profile</a></p>
+	<p><a href="https://twitter.com/GaudenziGaia" target="_blank" class=“ref”>My Twitter profile</a></p>
 </ul>		     
 
         {% if site.show_downloads %}
         <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+          <p><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></p>
+          <p><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></p>
+          <p><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></p>
         </ul>
         {% endif %}
 </div>
