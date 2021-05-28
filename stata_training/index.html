@@ -60,26 +60,87 @@ title: Resources to learn Stata
     tostring(var), replace <br> </p>
   </code>
 </div>
+
 <h3> Identify missing values </h3>
-<p>
-<div class="codenotes">
-  <code>mvdecode _all, mv(99=.m \ 96=.d )</code>
-</div>  
-</p>
-<h3> Cleaning strings </h3>
-<p></p>
-<h2> Data manipulation </h2>
-<p></p>
-<h2> Data visualization </h2>
-<p></p>
-<h2> Exporting Data </h2>
-<p></p>
-<h1> Selected topics in using Stata </h1>
-<h2> How to produce stunning summary statistics? </h2>
-<p></p>
-<h2> How to create maps? </h2>
-<p>Did you know you can create simple maps in Stata? This is thanks to the absolutely awesome people that invented the spmap command. </p>
+	<p>
+	<div class="codenotes">
+	  <code>mvdecode _all, mv(99=.m \ 96=.d )</code>
+	</div>  
+	</p>
+	<h3> Cleaning strings </h3>
+	<p></p>
+	<h2> Data manipulation </h2>
+	<p></p>
+	<h2> Data visualization </h2>
+	<p></p>
+	<h2> Exporting Data </h2>
+	<p></p>
+	<h1> Selected topics in using Stata </h1>
+	<h2> How to produce stunning summary statistics? </h2>
+	<p></p>
+	<h2> How to create maps? </h2>
+	<p>Did you know you can create simple maps in Stata? This is thanks to the absolutely awesome people that invented the spmap command. </p>
+
 <h2> How to create graphs with error bar? </h2>
+
+  <div class="codenotes"><code>
+* 1.8.1 Graphs with error bars
+
+u "$training_data/3_Data processing/percentage_covid_cases_by_province_2019", clear
+
+	replace Regione=""
+		
+		merge 1:1 Provincia using "$training_data/3_Data processing/TOP1_Province_Istat_data", nogen update
+		
+		keep perc_covid_on_1000* Provincia Regione treat
+		
+		* Evidenzia le regioni treated
+		bys Regione : egen treat_region=max(treat_province)
+				
+		collapse (mean) mean_march=perc_covid_on_1000_March mean_april=perc_covid_on_1000_April mean_may=perc_covid_on_1000_May (sd) sd_march=perc_covid_on_1000_March sd_april=perc_covid_on_1000_April sd_may=perc_covid_on_1000_May (count) N=perc_covid_on_1000_May, by(treat_province)
+		
+		g id=_n
+		
+		reshape long mean_ sd_, i(id) j(month) str
+		
+		* Generate fake x axis to graph variable properly with T&C one next to the other
+		* month_treat
+		g xaxis = 1 if month=="march" & treat==1
+		replace xaxis = 2 if month=="march" & treat==0
+		
+		replace xaxis = 4 if month=="april" & treat==1
+		replace xaxis = 5 if month=="april" & treat==0
+		
+		replace xaxis = 7 if month=="may" & treat==1
+		replace xaxis = 8 if month=="may" & treat==0
+		
+		
+		* Confidence intervals at 5%
+		g covid_upper=mean_+invttail(N-1,0.025)*(sd_/sqrt(N)) 
+		g covid_lower=mean_-invttail(N-1,0.025)*(sd_/sqrt(N)) 
+
+
+		
+		#delim ;
+			twoway (bar mean_ xaxis if treat==1, fcolor(navy)) 
+				   (bar mean_ xaxis if treat==0, fcolor(cranberry))
+				   /*(scatter mean_ xaxis, mcolor(black)msize(vsmall))*/
+				   (rcap covid_upper covid_lower xaxis , color(black))
+				   ,
+				   graphregion(color(white))
+				   legend(row(1) order(1 "Treatment provinces" 2 "Control provinces"))
+				   title("Number of COVID-19 Cases by Province")
+				   xlabel(1.5 "Covid cases March" 4.5 "Covid cases April" 7.5 "Covid cases May")
+				   /*ylabel(100(50)250)*/
+				   xtitle("")
+				   ytitle("mean Number of cases per 1000 inhabitants")
+			;
+			#delim cr
+		
+		cap mkdir "$training_output/1_Graphs"
+		graph export "$training_output/1_Graphs/Bar graph.png", replace
+	</div></code>
+</p>
 <p>
   <div class="codenotes"><code>
 * 1.8.2 Maps
