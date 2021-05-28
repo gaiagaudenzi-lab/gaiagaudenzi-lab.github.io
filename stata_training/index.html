@@ -76,6 +76,7 @@ title: Resources to learn Stata
 	<h2> Exporting Data </h2>
 	<p></p>
 	<h1> Selected topics in using Stata </h1>
+
 	<h2> How to produce stunning summary statistics? </h2>
 	<p></p>
 	<h2> How to create maps? </h2>
@@ -86,146 +87,94 @@ title: Resources to learn Stata
   <div class="codenotes"><code>
 * 1.8.1 Graphs with error bars
 
-u "$training_data/3_Data processing/percentage_covid_cases_by_province_2019", clear
 
-	replace Regione=""
-		
-		merge 1:1 Provincia using "$training_data/3_Data processing/TOP1_Province_Istat_data", nogen update
-		
-		keep perc_covid_on_1000* Provincia Regione treat
-		
-		* Evidenzia le regioni treated
-		bys Regione : egen treat_region=max(treat_province)
-				
-		collapse (mean) mean_march=perc_covid_on_1000_March mean_april=perc_covid_on_1000_April mean_may=perc_covid_on_1000_May (sd) sd_march=perc_covid_on_1000_March sd_april=perc_covid_on_1000_April sd_may=perc_covid_on_1000_May (count) N=perc_covid_on_1000_May, by(treat_province)
-		
-		g id=_n
-		
-		reshape long mean_ sd_, i(id) j(month) str
-		
-		* Generate fake x axis to graph variable properly with T&C one next to the other
-		* month_treat
-		g xaxis = 1 if month=="march" & treat==1
-		replace xaxis = 2 if month=="march" & treat==0
-		
-		replace xaxis = 4 if month=="april" & treat==1
-		replace xaxis = 5 if month=="april" & treat==0
-		
-		replace xaxis = 7 if month=="may" & treat==1
-		replace xaxis = 8 if month=="may" & treat==0
-		
-		
-		* Confidence intervals at 5%
-		g covid_upper=mean_+invttail(N-1,0.025)*(sd_/sqrt(N)) 
-		g covid_lower=mean_-invttail(N-1,0.025)*(sd_/sqrt(N)) 
-
-
-		
-		#delim ;
-			twoway (bar mean_ xaxis if treat==1, fcolor(navy)) 
-				   (bar mean_ xaxis if treat==0, fcolor(cranberry))
-				   /*(scatter mean_ xaxis, mcolor(black)msize(vsmall))*/
-				   (rcap covid_upper covid_lower xaxis , color(black))
-				   ,
-				   graphregion(color(white))
-				   legend(row(1) order(1 "Treatment provinces" 2 "Control provinces"))
-				   title("Number of COVID-19 Cases by Province")
-				   xlabel(1.5 "Covid cases March" 4.5 "Covid cases April" 7.5 "Covid cases May")
-				   /*ylabel(100(50)250)*/
-				   xtitle("")
-				   ytitle("mean Number of cases per 1000 inhabitants")
-			;
-			#delim cr
-		
-		cap mkdir "$training_output/1_Graphs"
-		graph export "$training_output/1_Graphs/Bar graph.png", replace
 	</div></code>
 </p>
 <p>
   <div class="codenotes"><code>
-* 1.8.2 Maps
+* 1.8.2 Maps<br>
 
-* 1 STEP: Convert shapefile to .dta
+* 1 STEP: Convert shapefile to .dta<br>
 
-	shp2dta using "$training_data/4_Data visualization/Map/gadm36_BGD_2.shp", data("$training_data/4_Data visualization/Map/BGD_zilamap") coor("$training_data/4_Data visualization/Map/BGD_zilacoor") replace genid(id)
+	shp2dta using "$training_data/4_Data visualization/Map/gadm36_BGD_2.shp", data("$training_data/4_Data visualization/Map/BGD_zilamap") coor("$training_data/4_Data visualization/Map/BGD_zilacoor") replace genid(id)<br>
 	
-	u "$training_data/4_Data visualization/Map/BGD_zilamap.dta", clear
+	u "$training_data/4_Data visualization/Map/BGD_zilamap.dta", clear<br>
 	
-	spmap using "$training_data/4_Data visualization/Map/BGD_zilacoor.dta" , id(id) 
+	spmap using "$training_data/4_Data visualization/Map/BGD_zilacoor.dta" , id(id) <br>
 
-* Mark unfeasible districts
+* Mark unfeasible districts<br>
 
-	u "$training_data/4_Data visualization/Map/BGD_zilamap.dta", clear
+	u "$training_data/4_Data visualization/Map/BGD_zilamap.dta", clear<br>
 
-	* 1.1 Mark Hill tract areas
-	#delim ;
-	g var = "Hill tract/Cox's" 
-	if NAME_2 == "Chittagong" 
-	| NAME_2 == "Khagrachhari" 
-	| NAME_2 == "Rangamati" 
-	| NAME_2 == "Bandarban" 
-	| NAME_2 == "Cox'S Bazar"
-	;
-	#delim cr
+	* 1.1 Mark Hill tract areas<br>
+	#delim ;<br>
+	g var = "Hill tract/Cox's" <br>
+	if NAME_2 == "Chittagong" <br>
+	| NAME_2 == "Khagrachhari" <br>
+	| NAME_2 == "Rangamati" <br>
+	| NAME_2 == "Bandarban" <br>
+	| NAME_2 == "Cox'S Bazar"<br>
+	;<br>
+	#delim cr<br>
 
-	* 1.2 Mark Haor areas
-	#delim ;
-	replace var = "Haor areas" 
-	if NAME_2 == "Sylhet" 
-	| NAME_2 == "Maulvibazar" 
-	| NAME_2 == "Habiganj" 
-	| NAME_2 == "Sunamganj"
-	;
-	#delim cr
+	* 1.2 Mark Haor areas<br>
+	#delim ;<br>
+	replace var = "Haor areas" <br>
+	if NAME_2 == "Sylhet" <br>
+	| NAME_2 == "Maulvibazar" <br>
+	| NAME_2 == "Habiganj" <br>
+	| NAME_2 == "Sunamganj"<br>
+	;<br>
+	#delim cr<br>
 
-	* 1.3 Mark areas affected by Cyclones
-	#delim ;
-	replace var = "Cyclones" 
-	if NAME_2 == "Khulna" 
-	| NAME_2 == "Bagerhat" 
-	| NAME_2 == "Pirojpur" 
-	| NAME_2 == "Jhalokati"
-	| NAME_2 == "Patuakhali"
-	| NAME_2 == "Barguna"
-	| NAME_2 == "Bhola"
-	| NAME_2 == "Noakhali" 
-	| NAME_2 == "Satkhira"  
-	;
-	#delim cr
+	* 1.3 Mark areas affected by Cyclones<br>
+	#delim ;<br>
+	replace var = "Cyclones" <br>
+	if NAME_2 == "Khulna" <br>
+	| NAME_2 == "Bagerhat" <br>
+	| NAME_2 == "Pirojpur" <br>
+	| NAME_2 == "Jhalokati"<br>
+	| NAME_2 == "Patuakhali"<br>
+	| NAME_2 == "Barguna"<br>
+	| NAME_2 == "Bhola"<br>
+	| NAME_2 == "Noakhali" <br>
+	| NAME_2 == "Satkhira"  <br>
+	;<br>
+	#delim cr<br>
 
-	* 1.4 Mark areas affected by flooding
-	#delim ;
-	replace var = "Flooding" 
-	if NAME_2 == "Faridpur" 
-	| NAME_2 == "Sirajganj" 
-	| NAME_2 == "Tangail" 
-	| NAME_2 == "Jamalpur" 
-	| NAME_2 == "Gaibandha" 
-	| NAME_2 == "Lakshmipur" 
-	;
-	#delim cr
+	* 1.4 Mark areas affected by flooding<br>
+	#delim ;<br>
+	replace var = "Flooding" <br>
+	if NAME_2 == "Faridpur" <br>
+	| NAME_2 == "Sirajganj" <br>
+	| NAME_2 == "Tangail" <br>
+	| NAME_2 == "Jamalpur" <br>
+	| NAME_2 == "Gaibandha" <br>
+	| NAME_2 == "Lakshmipur" <br>
+	;<br>
+	#delim cr<br>
 
-	* 1.5 Mark areas affected by water logging
-	replace var = "Water Logging" if NAME_2 == "Jessore" 
+	* 1.5 Mark areas affected by water logging<br>
+	replace var = "Water Logging" if NAME_2 == "Jessore" <br>
 
-	* 1.6 Mark areas affected by flash flood (if not already eliminated)
-	replace var = "Flash flood" if NAME_2 == "Netrakona" 
+	* 1.6 Mark areas affected by flash flood (if not already eliminated)<br>
+	replace var = "Flash flood" if NAME_2 == "Netrakona" <br>
 
-	encode var, g(var2)
+	encode var, g(var2)<br>
 	
-	preserve
-	* Crea le label
-	u "$training_data/4_Data visualization/Map/BGD_zilacoor.dta", clear
-	collapse (mean) _X _Y, by(_ID)
-	rename _ID id
-	merge 1:1 id using "$training_data/4_Data visualization/Map/BGD_zilamap.dta"
-	keep id _X _Y NAME_2
-	save "$training_data/4_Data visualization/Map/BGD_label_coor", replace
-	restore
+	preserve<br>
+	* Create labels (not compulsory) <br>
+	u "$training_data/4_Data visualization/Map/BGD_zilacoor.dta", clear<br>
+	collapse (mean) _X _Y, by(_ID)<br>
+	rename _ID id<br>
+	merge 1:1 id using "$training_data/4_Data visualization/Map/BGD_zilamap.dta"<br>
+	keep id _X _Y NAME_2<br>
+	save "$training_data/4_Data visualization/Map/BGD_label_coor", replace<br>
+	restore<br>
 	
-	* 1.7 Create map
-	spmap var2 using "$training_data/4_Data visualization/Map/BGD_zilacoor.dta" , id(id) clmethod(unique)  ocolor(gs8 ..) fcolor(Pastel2) ndocolor(gs8 ..) name(base, replace) ndlab("Available districts") title({bf:Logistically unfeasible districts}) label(data("$training_data/4_Data visualization/Map/BGD_label_coor.dta") label(NAME_2) xcoord(_X) ycoord(_Y) length(20) size(*0.5) gap(*1) color(black)) legend(pos(7))
+	* 1.7 Create map<br>
+	spmap var2 using "$training_data/4_Data visualization/Map/BGD_zilacoor.dta" , id(id) clmethod(unique)  ocolor(gs8 ..) fcolor(Pastel2) ndocolor(gs8 ..) name(base, replace) ndlab("Available districts") title({bf:Logistically unfeasible districts}) label(data("$training_data/4_Data visualization/Map/BGD_label_coor.dta") label(NAME_2) xcoord(_X) ycoord(_Y) length(20) size(*0.5) gap(*1) color(black)) legend(pos(7))<br>
 
-graph export "$training_output/Bangladesh_map.png", as(png) replace
+graph export "$training_output/Bangladesh_map.png", as(png) replace<br>
     </code></div>
 </p>
