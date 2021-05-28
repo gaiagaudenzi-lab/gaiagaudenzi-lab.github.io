@@ -3,6 +3,17 @@ layout: default_subpages
 title: Resources to learn Stata
 ---
 
+<style>
+.codenotes {
+  border-radius: 15px;
+  background: #f0f0f5;
+  padding: 10px;
+  font-size: 1em;
+}
+</style>
+</head>
+<body>
+
 <h1>Stata training</h1>
 
 <p>This "Stata guide" is intended to be a handy resource for you, and you can use it the way you want. It is divided in topic but it is not consequential, meaning you can jump from one chapter to another without any problems. </p>
@@ -23,8 +34,13 @@ title: Resources to learn Stata
 </ul>
 
 <h2> Stata basics </h2>
+  
 <p>The most important code in Stata is <code>help<br></code>
-<code>use "directory/dataset.dta"</code></p>
+  
+ <div class="codenotes">
+      <code>use "directory/dataset.dta"</code></p>
+ </div>  
+
 <h3> Use dofiles! </h3>
 <p></p>
 <h3> Organize your workflow </h3>
@@ -40,7 +56,9 @@ title: Resources to learn Stata
 destring(var), replace <br>
 tostring(var), replace <br> </p>
 <h3> Identify missing values </h3>
-<p><code>mvdecode _all, mv(99=.m \ 96=.d )</code></p>
+<div class="codenotes">
+  <p><code>mvdecode _all, mv(99=.m \ 96=.d )</code></p>
+</div>  
 <h3> Cleaning strings </h3>
 <p></p>
 <h2> Data manipulation </h2>
