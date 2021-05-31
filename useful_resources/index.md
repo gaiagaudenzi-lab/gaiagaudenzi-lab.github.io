@@ -7,5 +7,8 @@
 * [CGD (Center for Global Development)](https://www.cgdev.org/page/job-opportunities-0)
 * [IGC (International Growh Center)](https://www.theigc.org/about/careers/)
 * [LSE jobs website](https://jobs.lse.ac.uk/VacanciesV2.aspx)
-## Resources to became an impeccable Research Assistant/Professional
+## Professional Development
 * [World Bank's course: Manage Successful Impact Evaluation Surveys course](https://osf.io/672ej/)
+* Some wonderful people crated this incredibly useful resource: [The RA Guide](https://raguide.github.io/) 
+## Other resources
+* A very good website for Literature Review: [ConnectedPapers](https://www.connectedpapers.com/)
