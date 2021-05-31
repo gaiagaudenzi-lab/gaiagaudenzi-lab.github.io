@@ -1,4 +1,8 @@
 # Useful resources for wannabe Economists conducting Field Experiments
+
+Here are concentrated some of the information I gathered from various sources little by little. I hope they can make your life easier when deciding which job is right for you!
+  
+  
 ## Where can I find jobs?
 * Twitter ! (Particularly vacancies for Research Assistants (RAs) are posted on @econ_RA
 * [EconJobMarket](https://econjobmarket.org/)
