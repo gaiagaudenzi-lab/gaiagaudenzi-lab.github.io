@@ -12,6 +12,7 @@
 ## Professional Development
 * [World Bank's course: Manage Successful Impact Evaluation Surveys course](https://osf.io/672ej/)
 * Some wonderful people crated this incredibly useful resource: [The RA Guide](https://raguide.github.io/) 
+* [J-PAL's advices for landing an RAship](https://www.povertyactionlab.org/sites/default/files/Advice-for-Landing-an-RA-ship.pdf)
   
   
 ## Other resources
