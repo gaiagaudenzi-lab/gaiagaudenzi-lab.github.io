@@ -1,6 +1,6 @@
 # Useful resources for wannabe Economists conducting Field Experiments
 
-Here are concentrated some of the information I gathered from various sources little by little. I hope they can make your life easier when deciding which job is right for you!
+Here are concentrated various pieces of information I gathered during my journey as an RA. I hope they can make your life easier when deciding which job is right for you!
   
   
 ## Where can I find jobs?
@@ -21,3 +21,5 @@ Here are concentrated some of the information I gathered from various sources li
   
 ## Other resources
 * A very good website for Literature Review: [ConnectedPapers](https://www.connectedpapers.com/)
+* A very good (free) translator (with a nice plugin for MacOS!): [DeepL](https://www.deepl.com/en/translator)
+* A much better software than Word to check your spelling and writing flow in English: [Grammarly](https://www.grammarly.com/)
