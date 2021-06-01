@@ -30,27 +30,31 @@ title: Resources to learn Stata
 	 <img src="{{site.url}}/images/Stata1.png"  alt=“Stata_interface” width="100%"/>
 	<br>
 	<br>
-	You should use the interface only to look at variables, but it is extremely inefficient to type your commands directly into the Command prompt. You should use dofiles instead! (We'll talk about them in a second).
+	You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt. It is extremely inefficient to type your commands directly into the Command prompt. You should use dofiles instead! (We'll talk about them in a second).
 	<br>
 </p>
-	
-
-<h2>Great resources to learn Stata online</h2>
-<p>There is only one way to get proficient with Stata: to have PATIENCE. Practice is fundamental to become better and better, do not get discouraged if you are not able to achieve what you want at the beginning. Stata prizes people who have patience and practice with perseverance. Hopefully this training and my source code will help you navigating the immense world for Data Cleaning, Processing and Analysis with Stata and will make the whole learning path easier and funnier! In the meantime, I leave you with some sources to learn Stata online that were extremely useful for me:
-<ul>
-  <li><a href="https://www.stata.com/links/resources-for-learning-stata/" target="_blank" >Stata official website</a></li>
-  <li><a href="https://stats.idre.ucla.edu/stata/" target="_blank" >UCLA website</a></li>
-  <li><a href="http://www.princeton.edu/~otorres/Stata/" target="_blank" >Princeton Stata tutorial</a></li>
-  <li><a href="https://stats.idre.ucla.edu/stata/webbooks/" target="_blank" >Stata web books from UCLA</a></li>
-</ul>
 
 <h2> Stata basics </h2>
   
 <p>The most important code in Stata is <code>help<br></code>
-  
+	
+  <h3> Loading data and directories </h3>
+	How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a .dta (the Stata format for databases) into Stata, you will use the following syntax:
  <div class="codenotes">
-      <code>use "directory/dataset.dta"</code></p>
+      <code>use "yourdirectory/dataset.dta"</code></p>
  </div>  
+To know in which directory you are at the moment, type
+ <div class="codenotes">
+      pwd
+ </div>  
+It will return the directory Stata is in. To change directory:
+ <div class="codenotes">
+      cd "otherdirectory"
+ </div> 
+To create directories:
+ <div class="codenotes">
+      mkdir "newdirectory"
+ </div> 
 
 <h3> Use dofiles! </h3>
 <p></p>
@@ -190,4 +194,12 @@ graph export "$training_output/Bangladesh_map.png", as(png) replace<br>
 
 
 	</div></code>
+<h2>Great resources to learn Stata online</h2>
+<p>There is only one way to get proficient with Stata: to have PATIENCE. Practice is fundamental to become better and better, do not get discouraged if you are not able to achieve what you want at the beginning. Stata prizes people who have patience and practice with perseverance. Hopefully this training and my source code will help you navigating the immense world for Data Cleaning, Processing and Analysis with Stata and will make the whole learning path easier and funnier! In the meantime, I leave you with some sources to learn Stata online that were extremely useful for me:
+<ul>
+  <li><a href="https://www.stata.com/links/resources-for-learning-stata/" target="_blank" >Stata official website</a></li>
+  <li><a href="https://stats.idre.ucla.edu/stata/" target="_blank" >UCLA website</a></li>
+  <li><a href="http://www.princeton.edu/~otorres/Stata/" target="_blank" >Princeton Stata tutorial</a></li>
+  <li><a href="https://stats.idre.ucla.edu/stata/webbooks/" target="_blank" >Stata web books from UCLA</a></li>
+</ul>
 </p>
