@@ -1,4 +1,7 @@
-
+---
+layout: default_subpages
+title: Stata Training
+---
 
 # Stata training
 
