@@ -73,7 +73,7 @@ mkdir "otherdirectory"
 ```
 ### Identify missing values 
  ```stata
-mvdecode _all, mv(99=.m \ 96=.d )</code>
+mvdecode _all, mv(99=.m \ 96=.d )
 ```
 ### Cleaning strings 
 
