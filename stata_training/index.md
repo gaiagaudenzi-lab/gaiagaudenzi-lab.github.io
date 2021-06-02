@@ -21,6 +21,8 @@ Here is an example of a Stata interface:
 * <span style="color:green">Command window</span>
 * <span style="color:red">Variables window</span>
 * <span style="color:orange">Properties window</span>
+
+
 You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt. It is extremely inefficient to type your commands directly into the Command prompt. You should use dofiles instead! (We'll talk about them in a second).
 
 
