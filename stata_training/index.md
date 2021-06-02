@@ -57,7 +57,7 @@ mkdir "otherdirectory"
 
 ## Collaborative coding setting 
 
-## Loading Data 
+## Loading data 
 
 ## Data cleaning 
 
