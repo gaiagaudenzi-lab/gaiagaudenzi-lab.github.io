@@ -12,23 +12,24 @@ If you already have a knowledge of what Stata is, you can definitely skip the St
 ## What is Stata? 
 Nothing else than a statistic software to analyze your data! It is widely used (at least in Economics, which is the field where I come from) and it is very simple to use. You can browse through this training to have a sense of what you can do with it and get used to the language and terminology. 
 	
-	Here is an example of a Stata interface:
-  
-	![Stata_interface]({{site.url}}/images/Stata1.png)
+Here is an example of a Stata interface:
+
+![Stata_interface]({{site.url}}/images/Stata1.png)
 	
-	You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt. It is extremely inefficient to type your commands directly into the Command prompt. You should use dofiles instead! (We'll talk about them in a second).
+You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt. It is extremely inefficient to type your commands directly into the Command prompt. You should use dofiles instead! (We'll talk about them in a second).
 
 
 ## Stata basics 
 
 The most important code in Stata is 
+
 ```stata
 help
-```	
-  
+```
 ## Loading data and directories
 
 How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a .dta (the Stata format for databases) into Stata, you will use the following syntax:
+
 ```stata
       use "yourdirectory/dataset.dta"
 ```
@@ -48,17 +49,17 @@ To create directories:
 mkdir "otherdirectory"
 ```
 
-Use dofiles! </h3>
+## Use dofiles! 
 
- Organize your workflow </h3>
+## Organize your workflow
 
- Globals and locals </h2>
+## Globals and locals 
 
- Collaborative coding setting </h2>
+## Collaborative coding setting 
 
- Loading Data </h2>
+## Loading Data 
 
- Data cleaning </h2>
+## Data cleaning 
 
  ```stata
     rename _all, lower 
@@ -66,28 +67,25 @@ Use dofiles! </h3>
     tostring(var), replace 
 ```
 ### Identify missing values 
-	<p>
-	<div class="codenotes">
-	  <code>mvdecode _all, mv(99=.m \ 96=.d )</code>
-	</div>  
-	</p>
-	<h3> Cleaning strings </h3>
-	<p></p>
-	<h2> Data manipulation </h2>
-	<p></p>
-	<h2> Data visualization </h2>
-	<p></p>
-	<h2> Exporting Data </h2>
-	<p></p>
-	<h1> Selected topics in using Stata </h1>
+ ```stata
+mvdecode _all, mv(99=.m \ 96=.d )</code>
+```
+### Cleaning strings 
 
-	<h2> How to produce stunning summary statistics? </h2>
-	<p></p>
-	<h2> How to create maps? </h2>
-	<p>Did you know you can create simple maps in Stata? This is thanks to the absolutely awesome people that invented the spmap command. 
-<p>
-  <div class="codenotes"><code>
-* 1.8.2 Maps<br>
+## Data manipulation 
+
+## Data visualization 
+
+## Exporting Data 
+
+# Selected topics in using Stata
+
+## How to produce stunning summary statistics? 
+
+## How to create maps?
+Did you know you can create simple maps in Stata? This is thanks to the absolutely awesome people that invented the spmap command. 
+```stata
+* 1.8.2 Maps
 
 * 1 STEP: Convert shapefile to .dta<br>
 
@@ -170,25 +168,18 @@ Use dofiles! </h3>
 	* 1.7 Create map<br>
 	spmap var2 using "$training_data/4_Data visualization/Map/BGD_zilacoor.dta" , id(id) clmethod(unique)  ocolor(gs8 ..) fcolor(Pastel2) ndocolor(gs8 ..) name(base, replace) ndlab("Available districts") title({bf:Logistically unfeasible districts}) label(data("$training_data/4_Data visualization/Map/BGD_label_coor.dta") label(NAME_2) xcoord(_X) ycoord(_Y) length(20) size(*0.5) gap(*1) color(black)) legend(pos(7))<br>
 
-graph export "$training_output/Bangladesh_map.png", as(png) replace<br>
-    </code></div>
-</p>
+graph export "$training_output/Bangladesh_map.png", as(png) replace
+```
+## How to create graphs with error bar? 
 
-</p>
-
-<h2> How to create graphs with error bar? </h2>
-
-  <div class="codenotes"><code>
+```stata
 * 1.8.1 Graphs with error bars
+```
 
+## Great resources to learn Stata online
+There is only one way to get proficient with Stata: to have PATIENCE. Practice is fundamental to become better and better, do not get discouraged if you are not able to achieve what you want at the beginning. Stata prizes people who have patience and practice with perseverance. Hopefully this training and my source code will help you navigating the immense world for Data Cleaning, Processing and Analysis with Stata and will make the whole learning path easier and funnier! In the meantime, I leave you with some sources to learn Stata online that were extremely useful for me:
 
-	</div></code>
-<h2>Great resources to learn Stata online</h2>
-<p>There is only one way to get proficient with Stata: to have PATIENCE. Practice is fundamental to become better and better, do not get discouraged if you are not able to achieve what you want at the beginning. Stata prizes people who have patience and practice with perseverance. Hopefully this training and my source code will help you navigating the immense world for Data Cleaning, Processing and Analysis with Stata and will make the whole learning path easier and funnier! In the meantime, I leave you with some sources to learn Stata online that were extremely useful for me:
-<ul>
-  <li><a href="https://www.stata.com/links/resources-for-learning-stata/" target="_blank" >Stata official website</a></li>
-  <li><a href="https://stats.idre.ucla.edu/stata/" target="_blank" >UCLA website</a></li>
-  <li><a href="http://www.princeton.edu/~otorres/Stata/" target="_blank" >Princeton Stata tutorial</a></li>
-  <li><a href="https://stats.idre.ucla.edu/stata/webbooks/" target="_blank" >Stata web books from UCLA</a></li>
-</ul>
-</p>
+[Stata official website](https://www.stata.com/links/resources-for-learning-stata/)
+[UCLA website](https://stats.idre.ucla.edu/stata/)
+[Princeton Stata tutorial](http://www.princeton.edu/~otorres/Stata/)
+[Stata web books from UCLA](https://stats.idre.ucla.edu/stata/webbooks/)
