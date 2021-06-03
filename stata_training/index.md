@@ -19,7 +19,7 @@ Here is an example of a Stata interface:
 
 * <span style="color:blue;font-size:20px">History window</span>
 * <span style="color:fuchsia;font-size:20px">Results window</span>
-* <span style="color:green;font-size:20px">Command window</span>
+* <span style="color:green;font-size:20px">Command prompt</span>
 * <span style="color:red;font-size:20px">Variables window</span>
 * <span style="color:orange;font-size:20px">Properties window</span>
 
@@ -36,13 +36,14 @@ help
 ```
 ## Loading data and directories
 
-How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a .dta (the Stata format for databases) into Stata, you will use the following syntax:
+How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a file into Stata, you will use the following syntax:
 
 ```stata
-      use "yourdirectory/dataset.dta"
+use "yourdirectory/dataset.dta"
 ```
+Where "yourdirectory" is the directory where the file is. For the purpose of the example, I show the directory of the file example.dta contained on my computer in the directory "/Users/gaiagaudenzi/Documents/Stata"
 
-To know in which directory you are at the moment, type
+To know in which directory you are at the moment, type on the Command prompt:
 
 ```stata
 pwd
