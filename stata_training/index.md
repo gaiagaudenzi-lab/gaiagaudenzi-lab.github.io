@@ -16,15 +16,13 @@ Here is an example of a Stata interface:
 
 ![Stata_interface]({{site.url}}/images/Stata1.png)
 
-<div class="bullet">
-	<ul>
-<li><span style="color:blue">History window</span></li>
-<li><span style="color:fuchsia">Results window</span></li>
-<li><span style="color:green">Command window</span></li>
-<li><span style="color:red">Variables window</span></li>
-<li><span style="color:orange">Properties window</span></li>
-	</ul>
-</div>
+
+<span style="color:blue;font-size:16px;">History window</span>
+<span style="color:fuchsia;font-size:16px">Results window</span>
+<span style="color:green;font-size:16px">Command window</span>
+<span style="color:red;font-size:16px">Variables window</span>
+<span style="color:orange;font-size:16px">Properties window</span>
+
 
 You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt. It is extremely inefficient to type your commands directly into the Command prompt. You should use dofiles instead! (We'll talk about them in a second).
 
