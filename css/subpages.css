@@ -44,6 +44,6 @@ ul.posts li {
     list-style: none;
 }
 
-.bullet{
-    font-size: 2em;
+ul.bullet li{
+    font-size: 1.5em;
 }    
