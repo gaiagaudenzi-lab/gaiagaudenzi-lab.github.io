@@ -33,26 +33,41 @@ Let’s start talking about  how you can actually load datasets on Stata. The ex
 
 ## Loading data and directories
 
-How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a file into Stata, you will use the following syntax:
+How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a *.dta* file into Stata, you will use the following syntax:
 
 ```stata
 use "yourdirectory/dataset.dta"
 ```
-Where "yourdirectory" is the directory where the file is. For the purpose of the example, I show the directory of the file example.dta contained on my computer in the directory "/Users/gaiagaudenzi/Documents/Stata"
+
+Where "yourdirectory" is the directory where the file is. For example, in the box below, I show the directory of the file example.dta contained on my computer in the directory "/Users/gaiagaudenzi/Documents/Stata"
+
+```stata
+use "/Users/gaiagaudenzi/Documents/Stata/dataset.dta"
+```
+
+This will open the file dataset.dta on Stata.
 
 To know in which directory you are at the moment, type on the Command prompt:
 
 ```stata
 pwd
 ```
-It will return the directory Stata is in. To change directory:
+
+It will return the directory Stata is in. In my case now it is:
+```stata
+"/Users/gaiagaudenzi/Documents/Stata/dataset.dta"
+```
+
+To change directory (in this example I change from “/Users/gaiagaudenzi/Documents/Stata” to “/Users/gaiagaudenzi/Documents/Datasets”
 
 ```stata
-cd "otherdirectory"
+cd “/Users/gaiagaudenzi/Documents/Datasets”
 ```
-To create directories:
- ```stata
-mkdir "otherdirectory"
+
+To create directories (this will create folders into your laptop! In this example I create the folder “NewDirectory”)
+
+```stata
+mkdir “/Users/gaiagaudenzi/Documents/NewDirectory”
 ```
 
 ## Use dofiles! 
