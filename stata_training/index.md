@@ -70,9 +70,11 @@ To create directories (this will create folders into your laptop! In this exampl
 mkdir “/Users/gaiagaudenzi/Documents/NewDirectory”
 ```
 
-## Use dofiles! 
-
 ## Organize your workflow
+
+### Use dofiles!
+
+When using Stata for research, one of your first concerns should be how to make sure your research is reproducible, and how to make sure that, if you look at a clean dataset 5 years after, you are able to trace back any modification you make to the raw data and (ideally) also know why you made that modification. Dofiles help doing all of this! Why are they called Dofiles? because their extension is  .do. Dofiles allow you to quickly reproduce your work and leave comments between your lines of code, so that you can note down what you are doing, and why you are doing it. Ideally a Dofile should be written in a way that allows another Stata user (or your future self, which 99% of the time will NOT remember why you did what you did) to understand everything you did in there without effort. 
 
 ## Globals and locals 
 
