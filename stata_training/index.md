@@ -24,16 +24,13 @@ Here is an example of a Stata interface:
 * <span style="color:orange;font-size:20px">Properties window</span>
 
 
-You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt. It is extremely inefficient to type your commands directly into the Command prompt. You should use dofiles instead! (We'll talk about them in a second).
+You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt, except for quick checks. It is extremely inefficient to type your commands directly into the Command prompt. You should use *dofiles* instead! (We'll talk about them in a second).
 
 
 ## Stata basics 
 
-The most important code in Stata is 
+Let’s start talking about  how you can actually load datasets on Stata. The extension stata uses for its file is .dta, so the name of a dataset in Stata format will look like this: dataset.dta . However, you can import a wide variety of files with different formats into Stata (Excel, csv etc.)
 
-```stata
-help
-```
 ## Loading data and directories
 
 How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a file into Stata, you will use the following syntax:
