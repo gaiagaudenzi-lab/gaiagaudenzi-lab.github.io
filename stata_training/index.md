@@ -19,11 +19,11 @@ Here is an example of a Stata interface:
 ![Stata_interface]({{site.url}}/images/Stata1.png)
 
 
-* <span style="color:blue;font-size:20px">History window</span>
-* <span style="color:fuchsia;font-size:20px">Results window</span>
-* <span style="color:green;font-size:20px">Command prompt</span>
-* <span style="color:red;font-size:20px">Variables window</span>
-* <span style="color:orange;font-size:20px">Properties window</span>
+* <span style="color:blue;font-size:20px">History window</span>: Commands you write directly on the command prompt get stored there, so that if you want to re-run them, you just click on them and they appear on the command prompt without the need for you to type them again.
+* <span style="color:fuchsia;font-size:20px">Results window</span>: Where the output from your commands gets printed
+* <span style="color:green;font-size:20px">Command prompt</span>: Where you can type your command (not recommended)
+* <span style="color:red;font-size:20px">Variables window</span>: Where you can see all the variables and labels of the dataset that is loaded
+* <span style="color:orange;font-size:20px">Properties window</span>: Where you can see all the properties of the variables of the dataset that is loaded
 
 
 You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt, except for quick checks. It is extremely inefficient to type your commands directly into the Command prompt. You should use *dofiles* instead! (We'll talk about them in a second).
@@ -31,7 +31,7 @@ You should use the interface only to look at variables, at the output etc. you s
 
 ## Stata basics 
 
-Let’s start talking about  how you can actually load datasets on Stata. The extension stata uses for its file is .dta, so the name of a dataset in Stata format will look like this: dataset.dta . However, you can import a wide variety of files with different formats into Stata (Excel, csv etc.)
+Let’s start talking about  how you can actually load datasets on Stata. The extension stata uses for its file is .dta, so the name of a dataset in Stata format will look like this: dataset.dta. However, you can import a wide variety of files with different formats into Stata (Excel, csv etc.)
 
 ## Loading data and directories
 
