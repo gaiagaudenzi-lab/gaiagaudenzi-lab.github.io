@@ -12,26 +12,47 @@ If you already have a knowledge of what Stata is, you can definitely skip the St
 ## What is Stata? 
 Nothing else than a statistic software to analyze your data! It is widely used (at least in Economics, which is the field where I come from) and it is very simple to use. You can browse through this training to have a sense of what you can do with it and get used to the language and terminology. Luckily enough, Stata has excellent official resources to learn it and great online support. If you have a question on how to do something, you can look for an answer (if it's there already) or ask your question on the forum <span style="font-size:20px">[Statalist](https://www.statalist.org/)</span>.
 
-
-
 Here is an example of a Stata interface:
 
 ![Stata_interface]({{site.url}}/images/Stata1.png)
 
 
 * <span style="color:blue;font-size:20px">History window</span>: Commands you write directly on the command prompt get stored there, so that if you want to re-run them, you just click on them and they appear on the command prompt without the need for you to type them again.
-* <span style="color:fuchsia;font-size:20px">Results window</span>: Where the output from your commands gets printed
+* <span style="color:fuchsia;font-size:20px">Results window</span>: Where the output from your commands, error messages and all the other programme operations get printed. You can scroll it to see what is the output of the code you wrote (regression output etc.)
 * <span style="color:green;font-size:20px">Command prompt</span>: Where you can type your command (not recommended)
 * <span style="color:red;font-size:20px">Variables window</span>: Where you can see all the variables and labels of the dataset that is loaded
 * <span style="color:orange;font-size:20px">Properties window</span>: Where you can see all the properties of the variables of the dataset that is loaded
 
-
 You should use the interface only to look at variables, at the output etc. you should NOT type from the command prompt, except for quick checks. It is extremely inefficient to type your commands directly into the Command prompt. You should use *dofiles* instead! (We'll talk about them in a second).
 
+As it may be clear by now, Stata works with commands. Every line of code you type on Stata corresponds to a command. So with every line, you are asking Stata to perform a different action. This is an example of two lines of command in Stata:
 
+```stata
+1. use "/Users/gaiagaudenzi/Documents/Stata/dataset.dta"
+2. browse
+```
+"translated" in plain English, these two lines of code correspond to:
+
+1. Open the dataset named "dataset.dta" that is on my laptop, specifically in the directory "/Users/gaiagaudenzi/Documents/Stata/"
+2. Browse through the variables that are inside this dataset
+
+There are of course many many commands, depending on the operations you want to perform and on which variable. If you are not sure about which command you want to use, or how a command is supposed to be used, Stata will always help you. You just have to type
+
+```stata
+help
+```
+followed by the name of the command (Fun fact: help is itslf a command, that helps you understand other commands). Stata will open the documentation and show you some examples on how to use that command. Througout this training, I will make extensive use of the data documentation, so that you can get familiar with it and become more and more independent.
+
+## Structure of a command
+
+To let you know how the help command works, and what is the basic structure of a command as you see it on the Stata documentation. I take the code <code>summarize</code> as an example. It is a code that calculates for you the number of observations, the mean, the standard deviation, the minimum and the maximum of a variable. By typing <code>help summarize</code> we get the syntax of this code:
+
+```stata
+summarize [varlist] [if] [in] [weight] [, options]
+```
 ## Stata basics 
 
-Let’s start talking about  how you can actually load datasets on Stata. The extension stata uses for its file is .dta, so the name of a dataset in Stata format will look like this: dataset.dta. However, you can import a wide variety of files with different formats into Stata (Excel, csv etc.)
+Let’s start talking about how you can actually load datasets on Stata. The extension stata uses for its file is .dta, so the name of a dataset in Stata format will look like this: dataset.dta. However, you can import a wide variety of files with different formats into Stata (Excel, csv etc.)
 
 ## Loading data and directories
 
