@@ -208,5 +208,8 @@ There is only one way to get proficient with Stata: to have PATIENCE. Practice i
 * <span style="color:red;font-size:20px">[Stata web books from UCLA](https://stats.idre.ucla.edu/stata/webbooks/)</span> 
 * <span style="color:red;font-size:20px">[Code and Data](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf)</span>
 * <span style="color:red;font-size:20px">[Getting Started in Data Analysis using Stata](https://www.princeton.edu/~otorres/StataTutorial.pdf)</span>
+* <span style="color:red;font-size:20px">[Stata Tutorial](https://econweb.ucsd.edu/~elib/120b/Stata%20Tutorial.pdf)</span>
+* <span style="color:red;font-size:20px">[Stata Basic](https://edge.edx.org/assets/courseware/v1/85458a6abe1e09fb891fb8f8610dffbd/c4x/BerkeleyX/CEGA101AIE/asset/Module_1.2_STATA_Basics.pdf)</span>
+
 
 
