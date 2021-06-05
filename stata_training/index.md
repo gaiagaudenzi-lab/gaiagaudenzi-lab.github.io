@@ -10,8 +10,10 @@ This "Stata guide" is intended to be a handy resource for you, and you can use i
 If you already have a knowledge of what Stata is, you can definitely skip the Stata basic part. I will try to cover from the very basic to the very advanced (as far as I know), but if you think I took something for granted, or something is not well explained shoot me a message! Feel free to copy and paste my code and send me an email at gaiagaudenzi9@gmail.com if you have problems working with the code! 
 
 ## What is Stata? 
-Nothing else than a statistic software to analyze your data! It is widely used (at least in Economics, which is the field where I come from) and it is very simple to use. You can browse through this training to have a sense of what you can do with it and get used to the language and terminology. 
-	
+Nothing else than a statistic software to analyze your data! It is widely used (at least in Economics, which is the field where I come from) and it is very simple to use. You can browse through this training to have a sense of what you can do with it and get used to the language and terminology. Luckily enough, Stata has excellent official resources to learn it and great online support. If you have a question on how to do something, you can look for an answer (if it's there already) or ask your question on the forum <span style="font-size:20px">[Statalist](https://www.statalist.org/)</span>.
+
+
+
 Here is an example of a Stata interface:
 
 ![Stata_interface]({{site.url}}/images/Stata1.png)
