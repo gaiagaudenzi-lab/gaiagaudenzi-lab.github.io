@@ -202,7 +202,7 @@ graph export "$training_output/Bangladesh_map.png", as(png) replace
 ## Great resources to learn Stata online
 There is only one way to get proficient with Stata: to have PATIENCE. Practice is fundamental to become better and better, do not get discouraged if you are not able to achieve what you want at the beginning. Stata prizes people who have patience and practice with perseverance. Hopefully this training and my source code will help you navigating the immense world for Data Cleaning, Processing and Analysis with Stata and will make the whole learning path easier and funnier! In the meantime, I leave you with some sources to learn Stata online that were extremely useful for me:
 
-[Stata official website](https://www.stata.com/links/resources-for-learning-stata/)
-[UCLA website](https://stats.idre.ucla.edu/stata/)
-[Princeton Stata tutorial](http://www.princeton.edu/~otorres/Stata/)
-[Stata web books from UCLA](https://stats.idre.ucla.edu/stata/webbooks/)
+* <span style="font-size:20px">[Stata official website](https://www.stata.com/links/resources-for-learning-stata/)</span>
+* <span style="color:fuchsia;font-size:20px">[UCLA website](https://stats.idre.ucla.edu/stata/)</span>
+* <span style="color:green;font-size:20px">[Princeton Stata tutorial](http://www.princeton.edu/~otorres/Stata/)</span>
+* <span style="color:red;font-size:20px">[Stata web books from UCLA](https://stats.idre.ucla.edu/stata/webbooks/)</span> 
