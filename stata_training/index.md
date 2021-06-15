@@ -33,8 +33,8 @@ As it may be clear by now, Stata works with commands. Every line of code you typ
 ```
 "translated" in plain English, these two lines of code correspond to:
 
-1. Open the dataset named "dataset.dta" that is on my laptop, specifically in the directory "/Users/gaiagaudenzi/Documents/Stata/"
-2. Browse through the variables that are inside this dataset
+<span style="font-size:20px">1. Open the dataset named "dataset.dta" that is on my laptop, specifically in the directory "/Users/gaiagaudenzi/Documents/Stata/"</span>
+<span style="font-size:20px">[2. Browse through the variables that are inside this dataset</span>
 
 There are of course many many commands, depending on the operations you want to perform and on which variable. If you are not sure about which command you want to use, or how a command is supposed to be used, Stata will always help you. You just have to type
 
@@ -233,6 +233,7 @@ There is only one way to get proficient with Stata: to have PATIENCE. Practice i
 * <span style="font-size:20px">[Getting Started in Data Analysis using Stata](https://www.princeton.edu/~otorres/StataTutorial.pdf){:target="_blank"}</span>
 * <span style="font-size:20px">[Stata Tutorial](https://econweb.ucsd.edu/~elib/120b/Stata%20Tutorial.pdf){:target="_blank"}</span>
 * <span style="font-size:20px">[Stata Basic](https://edge.edx.org/assets/courseware/v1/85458a6abe1e09fb891fb8f8610dffbd/c4x/BerkeleyX/CEGA101AIE/asset/Module_1.2_STATA_Basics.pdf){:target="_blank"}</span>
+* <span style="font-size:20px">[Getting Started with Stata, Princeton University](http://www.princeton.edu/~otorres/Stata/){:target="_blank"}</span>
 
 
 
