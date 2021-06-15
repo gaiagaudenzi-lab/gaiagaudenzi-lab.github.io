@@ -33,8 +33,8 @@ As it may be clear by now, Stata works with commands. Every line of code you typ
 ```
 "translated" in plain English, these two lines of code correspond to:
 
-<span style="font-size:20px">1. Open the dataset named "dataset.dta" that is on my laptop, specifically in the directory "/Users/gaiagaudenzi/Documents/Stata/"</span>
-<span style="font-size:20px">[2. Browse through the variables that are inside this dataset</span>
+<span style="font-size:20px">1. Open the dataset named "dataset.dta" that is on my laptop, specifically in the directory "/Users/gaiagaudenzi/Documents/Stata/"</span><br>
+<span style="font-size:20px">2. Browse through the variables that are inside this dataset</span>
 
 There are of course many many commands, depending on the operations you want to perform and on which variable. If you are not sure about which command you want to use, or how a command is supposed to be used, Stata will always help you. You just have to type
 
