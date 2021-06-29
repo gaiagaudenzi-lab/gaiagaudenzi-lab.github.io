@@ -25,5 +25,6 @@ Here are concentrated various pieces of information I gathered during my journey
 * A very good website for Literature Review: [ConnectedPapers](https://www.connectedpapers.com/){:target="_blank"}
 * A very good (free) translator (with a nice plugin for MacOS!): [DeepL](https://www.deepl.com/en/translator){:target="_blank"}
 * A much better software than Word to check your spelling and writing flow in English: [Grammarly](https://www.grammarly.com/){:target="_blank"}
+* JPAL document on asking questions for women's empowerment: [here](https://www.povertyactionlab.org/sites/default/files/research-resources/practical-guide-to-measuring-women-and-girls-empowerment-appendix1.pdf){:target="_blank"}
 
 
