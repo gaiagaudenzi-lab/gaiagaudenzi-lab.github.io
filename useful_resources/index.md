@@ -18,7 +18,7 @@ Here are concentrated various pieces of information I gathered during my journey
 * Some wonderful people crated this incredibly useful resource: [The RA Guide](https://raguide.github.io/){:target="_blank"}
 * [J-PAL's advices for landing an RAship](https://www.povertyactionlab.org/sites/default/files/Advice-for-Landing-an-RA-ship.pdf){:target="_blank"}
 * [DEVELOPMENT RESEARCH IN PRACTICE, WORLD BANK](https://worldbank.github.io/dime-data-handbook/){:target="_blank"} (EXTREMELY EXTREMELY USEFUL!)
-* [Applied Tips for Applied Mciro RAs](https://www.dropbox.com/s/eej9n1ywknlzcu6/Applied%20Tips%20for%20Applied%20Micro%20RAs.pdf?dl=0){:target="_blank"} by Livia Alfonsi and Gaia Dossi
+* [Applied Tips for Applied Micro RAs](https://www.dropbox.com/s/eej9n1ywknlzcu6/Applied%20Tips%20for%20Applied%20Micro%20RAs.pdf?dl=0){:target="_blank"} by Livia Alfonsi and Gaia Dossi
   
   
 ## Other resources
