@@ -1,5 +1,5 @@
 ---
-layout: default_subpages
+layout: sidebar_pages
 title: Stata Training
 ---
 	
