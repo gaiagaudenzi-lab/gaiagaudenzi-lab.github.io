@@ -38,12 +38,6 @@
 <a href="URL">Menu Item 3</a>
 </nav>
 </div>
-
-<div class="body-text">
-<!-- body content -->
-</div>
-
-</body>
     	
 	    
 	{{ content }}
