@@ -29,15 +29,7 @@
 <div class="bullet">	
 
 
-<!-- HTML -->
 
-<div class="sidebar">
-<nav>
-<a href="URL">Menu Item 1</a>
-<a href="URL">Menu Item 2</a>
-<a href="URL">Menu Item 3</a>
-</nav>
-</div>
     	
 	    
 	{{ content }}
