@@ -7,8 +7,6 @@ title: "Stata Training"
 * [Stata Course](#stata_course)
 	* [Setup](#setup)
 
-
-
 # Stata training
 
 This "Stata guide" is intended to be a handy resource for you, and you can use it the way you want. It is divided in topic but it is not consequential, meaning you can jump from one chapter to another without any problems. 
@@ -101,9 +99,10 @@ To create directories (this will create folders into your laptop! In this exampl
 ```stata
 mkdir “/Users/gaiagaudenzi/Documents/NewDirectory”
 ```
-# Stata course
+# <a name="stata_course">Stata course</a>
 
-# Setup
+# <a name="setup">Setup</a>
+
 ## How to organize your workflow
 
 ### Use dofiles! 
