@@ -1,3 +1,7 @@
+---
+layout: default_subpages
+title: "Stata Training"
+---
 # Table of contents
 * [Stata Basics](#stata_basics)
 * [Stata Course](#stata_course)
