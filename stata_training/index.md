@@ -2,7 +2,6 @@
 layout: default_subpages
 title: Stata Training
 ---
-<div class="w3-sidebar w3-red">
 	
 # Stata training
 
