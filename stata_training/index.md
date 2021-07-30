@@ -143,6 +143,8 @@ Guidelines to write dofiles
 * Automate everything that can be **easily automated**. (e.g. if you are performing repetitive actions in a dofile you may want to consider using loops to make your code more efficient. 
 * **Avoid hard coding** at all costs: DO NOT embed in your code something that cannot be changed directly/is specific to that dataset. Try to use macros and e() or r() results to avoid typing dofiles that will depend on a specific numbers you would always be boudn to check. For more info see: Create a setting for collaborative coding. 
 * Delete anything that is not essential: I know it feels bad to delete chunks of code you have been working on for hours. However, if you leave them in the middle of your document, they will clutter the space and you are going to start hating them as well. If you are too attached to your old code to delete it, put it at the end of the dofile and use the command `exit` so that the dofile stops before reading it. Example 
+
+
 ```code
 *- END DOFILE --------------------
 exit
@@ -152,6 +154,8 @@ Old code for task X
 
 put your old code here
 ```
+
+
 ### Create a folder structure 
 You should create a folder structure on your laptop where you store all the document and data of the project so that you immediately know where they are. This is important so that you don't waste time in the future looking for "that dataset I created a wile ago".
 The minimum structure I suggest is presented below:
@@ -165,7 +169,6 @@ The minimum structure I suggest is presented below:
   * **Graphs** _here you store all the graphs that come out as an output from your codes_
 
 *N.B. You may want to check iefolder, a user-written command the World Bank created to automatically create a folder structure from Stata.*
-
 
 ### Create a workflow
 
