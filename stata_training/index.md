@@ -3,6 +3,11 @@ layout: default_subpages
 title: "Stata Training"
 ---
 
+<div class="panel panel-default">
+  <div class="panel-body">Panel Content</div>
+  <div class="panel-footer">Panel Footer</div>
+</div>
+
 # Table of contents
 * [Stata Basics](#stata_basics)
 * [Stata Course](#stata_course)
