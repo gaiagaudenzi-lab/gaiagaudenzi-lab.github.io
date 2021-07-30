@@ -653,7 +653,8 @@ g has_var=regexm(var,"[Vv]ar")
  `[ ]`	Square brackets denote a set of allowable characters/expressions to use in matching, such as [a-zA-Z0-9] for all alphanumeric characters.  
  `( )`	Parentheses must match and denote a subexpression group.
 </div>
-
+</div>
+	
 ### Extended functions
 
 * Use a local that displays a progressive number
