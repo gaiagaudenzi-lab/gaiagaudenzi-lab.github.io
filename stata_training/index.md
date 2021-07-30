@@ -576,6 +576,7 @@ replace var=upper(var)
 #### ```regexm``` looks at a string to find a specific substring and returns the value of 1 if there is a match.
 
 >N.B. Remember that these functions are all case sensitive!
+
 ```code
 * SPLIT
 
@@ -630,6 +631,7 @@ ta task, m
 
 g has_var=regexm(var,"[Vv]ar")
 ```
+
 <div class="panel panel-gitlab-orange">
 **LITTLE DICTIONARY ON STATA REGULAR EXPRESSION USEFUL TO HANDLE STRING VARIABLES**
 {: .panel-heading}
