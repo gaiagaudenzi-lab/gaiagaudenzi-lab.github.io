@@ -631,26 +631,31 @@ ta task, m
 
 g has_var=regexm(var,"[Vv]ar")
 ```
-
-> ### {% icon tip %} LITTLE DICTIONARY ON STATA REGULAR EXPRESSION USEFUL TO HANDLE STRING VARIABLES
-> **Counting**     
-> `*`	Asterisk means “match zero or more” of the preceding expression.   
-> `+`	Plus sign means “match one or more” of the preceding expression.  
-> `?`	Question mark means “match either zero or one” of the preceding expression.
-> 	
-> **Characters**
-> `a–z`	The dash operator means “match a range of characters or numbers”. The “a” and “z” are merely an example. It could also be 0–9, 5–8, F–M, etc.     
-> `.`	Period means “match any character”.  
-> `/`	A backslash is used as an escape character to match characters that would otherwise be interpreted as a regular-expression operator.
-> 	
-> **Anchors**  
-> `^`	When placed at the beginning of a regular expression, the caret means “match expression at beginning of string”. This character can be thought of as an > “anchor” character since it does not directly match a character, only the location of the match.  
-> `$`	When the dollar sign is placed at the end of a regular expression, it means “match expression at end of string”. This is the other anchor character.
-> **Groups**
-> `|`	The pipe character signifies a logical “or” that is often used in character sets (see square brackets below).  
-> `[ ]`	Square brackets denote a set of allowable characters/expressions to use in matching, such as [a-zA-Z0-9] for all alphanumeric characters.  
-> `( )`	Parentheses must match and denote a subexpression group.
-{: .tip}
+<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Header</div>
+  <div class="card-body">
+    <h5 class="card-title">LITTLE DICTIONARY ON STATA REGULAR EXPRESSION USEFUL TO HANDLE STRING VARIABLES</h5>
+    <p class="card-text">
+ **Counting**     
+ `*`	Asterisk means “match zero or more” of the preceding expression.   
+ `+`	Plus sign means “match one or more” of the preceding expression.  
+ `?`	Question mark means “match either zero or one” of the preceding expression.
+	
+ **Characters**
+ `a–z`	The dash operator means “match a range of characters or numbers”. The “a” and “z” are merely an example. It could also be 0–9, 5–8, F–M, etc.     
+ `.`	Period means “match any character”.  
+ `/`	A backslash is used as an escape character to match characters that would otherwise be interpreted as a regular-expression operator.
+ 	
+ **Anchors**  
+ `^`	When placed at the beginning of a regular expression, the caret means “match expression at beginning of string”. This character can be thought of as an > “anchor” character since it does not directly match a character, only the location of the match.  
+ `$`	When the dollar sign is placed at the end of a regular expression, it means “match expression at end of string”. This is the other anchor character.
+ **Groups**
+ `|`	The pipe character signifies a logical “or” that is often used in character sets (see square brackets below).  
+ `[ ]`	Square brackets denote a set of allowable characters/expressions to use in matching, such as [a-zA-Z0-9] for all alphanumeric characters.  
+ `( )`	Parentheses must match and denote a subexpression group.
+</p>
+  </div>
+</div>
 
 ### Extended functions
 
