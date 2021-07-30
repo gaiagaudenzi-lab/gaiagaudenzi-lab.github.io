@@ -632,7 +632,7 @@ ta task, m
 g has_var=regexm(var,"[Vv]ar")
 ```
 
-> ### {% icon tip %} **LITTLE DICTIONARY ON STATA REGULAR EXPRESSION USEFUL TO HANDLE STRING VARIABLES**
+> ### {% icon tip %} LITTLE DICTIONARY ON STATA REGULAR EXPRESSION USEFUL TO HANDLE STRING VARIABLES
 > **Counting**     
 > `*`	Asterisk means “match zero or more” of the preceding expression.   
 > `+`	Plus sign means “match one or more” of the preceding expression.  
