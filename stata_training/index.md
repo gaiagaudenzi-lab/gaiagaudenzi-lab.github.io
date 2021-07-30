@@ -631,11 +631,10 @@ ta task, m
 
 g has_var=regexm(var,"[Vv]ar")
 ```
-<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">LITTLE DICTIONARY ON STATA REGULAR EXPRESSION USEFUL TO HANDLE STRING VARIABLES</h5>
-    <p class="card-text">
+
+<div class="panel panel-default">
+  <div class="panel-heading">Little dictionary on Stata Regular expressions useful to handle string variables</div>
+  <div class="panel-body">
  **Counting**     
  `*`	Asterisk means “match zero or more” of the preceding expression.   
  `+`	Plus sign means “match one or more” of the preceding expression.  
@@ -653,8 +652,6 @@ g has_var=regexm(var,"[Vv]ar")
  `|`	The pipe character signifies a logical “or” that is often used in character sets (see square brackets below).  
  `[ ]`	Square brackets denote a set of allowable characters/expressions to use in matching, such as [a-zA-Z0-9] for all alphanumeric characters.  
  `( )`	Parentheses must match and denote a subexpression group.
-</p>
-  </div>
 </div>
 
 ### Extended functions
