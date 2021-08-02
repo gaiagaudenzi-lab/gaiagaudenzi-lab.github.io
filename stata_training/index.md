@@ -686,6 +686,20 @@ Where stub can be
 	i(i) is your ID variable
 	j(j)  is the variable whose unique values denote a subobservation (usually is the year)
 ## Randomization
+
+When you are drawing a random subset of a sample, to make it reproducible, you have to make sure you **set the seed** first, before you actually draw the sample to do that type:
+```code 
+set seed 87
+```
+To sample 10% of the sample
+```code 
+sample 10
+```
+
+To sample 200 observations in the sample
+```code
+sample 200, count
+```
 ## Automation: Loops
 
 	sysuse auto 
