@@ -2,6 +2,9 @@ body {
     margin: 10px auto;
     width: 95%;
 }
+wrapper {
+    margin: 0px;
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
