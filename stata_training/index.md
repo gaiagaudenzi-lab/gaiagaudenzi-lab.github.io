@@ -3,7 +3,8 @@ layout: default_subpages
 title: "Stata Training"
 ---
 
-
+<div class="wrapper">
+  <aside>
 # Table of contents
 * [Stata Basics](#stata_basics)
 * [Stata Course](#stata_course)
@@ -17,7 +18,9 @@ title: "Stata Training"
 	* [Maps](#maps)   
 * [Data analysis](#analysis)
 * [Appendix: List of commands](#appendix1)
-
+</aside>
+	
+ <main>
 # Stata training
 
 This "Stata guide" is intended to be a handy resource for you, and you can use it the way you want. It is divided in topic but it is not consequential, meaning you can jump from one chapter to another without any problems. 
@@ -869,4 +872,5 @@ There is only one way to get proficient with Stata: to have PATIENCE. Practice i
 
 [^1]: Long, J. Scott. 2009. The Workflow of Data Analysis Using
 Stata. College Station, TX: Stata Press.
-
+</main>
+</div>
