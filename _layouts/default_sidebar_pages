@@ -27,14 +27,14 @@
 	</nav>
 	
 <div class="sidebar">
-  <a class="active" href="/stata_training/#stata_basics">Stata basics</a>
-  <a href="stata_training/#stata_course">Stata course</a>
-  <a href="stata_training/#cleaning">Data Cleaning</a>
-  <a href="stata_training/#processing">Data Processing</a>
-  <a href="stata_training/#exporting">Data Exporting</a>
-  <a href="stata_training/#visualization">Data Visualization</a>
-  <a href="stata_training/#graphs">Graphs</a>
-  <a href="stata_training/#maps">Maps</a>
+  <a class="active" href="/#stata_basics">Stata basics</a>
+  <a href="/#stata_course">Stata course</a>
+  <a href="/#cleaning">Data Cleaning</a>
+  <a href="/#processing">Data Processing</a>
+  <a href="/#exporting">Data Exporting</a>
+  <a href="/#visualization">Data Visualization</a>
+  <a href="/#graphs">Graphs</a>
+  <a href="/#maps">Maps</a>
 
 </div>
 
