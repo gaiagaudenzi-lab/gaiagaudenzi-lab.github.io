@@ -2,6 +2,12 @@ body {
     margin: 10px auto;
     width: 95%;
 }
+container {
+    width: 100%; /* this make container fluid*/
+    height: auto;
+    margin-right: auto; /* this make content center*/
+    margin-left: auto;
+}
 wrapper {
     margin: 0px;
 }
