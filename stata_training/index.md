@@ -2,15 +2,9 @@
 layout: default_subpages
 title: "Stata Training"
 ---
-<div class="sidebar">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
 
-<!-- Page content -->
-<div class="content">
+
+
 # Table of contents
 * [Stata Basics](#stata_basics)
 * [Stata Course](#stata_course)
@@ -876,4 +870,3 @@ There is only one way to get proficient with Stata: to have PATIENCE. Practice i
 
 [^1]: Long, J. Scott. 2009. The Workflow of Data Analysis Using
 Stata. College Station, TX: Stata Press.
-</div>
