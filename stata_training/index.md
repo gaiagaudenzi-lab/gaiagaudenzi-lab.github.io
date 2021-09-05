@@ -17,9 +17,7 @@ title: "Stata Training"
 	* [Maps](#maps)   
 * [Data analysis](#analysis)
 * [Appendix: List of commands](#appendix1)
-</aside>
-	
- <main>
+
 # Stata training
 
 This "Stata guide" is intended to be a handy resource for you, and you can use it the way you want. It is divided in topic but it is not consequential, meaning you can jump from one chapter to another without any problems. 
