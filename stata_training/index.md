@@ -2,7 +2,12 @@
 layout: default_subpages
 title: "Stata Training"
 ---
-
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
 
 # Table of contents
 * [Stata Basics](#stata_basics)
