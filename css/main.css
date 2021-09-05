@@ -10,6 +10,7 @@ container {
 }
 wrapper {
     margin: 0px;
+    max-width: 960px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
