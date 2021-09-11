@@ -1,5 +1,5 @@
 ---
-layout: default_sidebarpages
+layout: default_sidebar
 title: "Stata Training"
 ---
 
