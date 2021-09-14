@@ -860,6 +860,9 @@ There is only one way to get proficient with Stata: to have PATIENCE. Practice i
 * <span style="font-size:20px">[Stata Tutorial](https://econweb.ucsd.edu/~elib/120b/Stata%20Tutorial.pdf){:target="_blank"}</span>
 * <span style="font-size:20px">[Stata Basic](https://edge.edx.org/assets/courseware/v1/85458a6abe1e09fb891fb8f8610dffbd/c4x/BerkeleyX/CEGA101AIE/asset/Module_1.2_STATA_Basics.pdf){:target="_blank"}</span>
 * <span style="font-size:20px">[Getting Started with Stata, Princeton University](http://www.princeton.edu/~otorres/Stata/){:target="_blank"}</span>
+* <span style="font-size:20px">[Julian Reif's website](https://julianreif.com/software/){:target="_blank"}</span>
+* <span style="font-size:20px">[Alvaro Carril's website](https://acarril.github.io/resources){:target="_blank"}</span>
+* <span style="font-size:20px">[Stefania Lovo's website](https://sites.google.com/site/stefanialovo/stata?authuser=0){:target="_blank"}</span>
 
 # <a name="analysis">Data analysis</a>
 
