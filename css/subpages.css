@@ -45,7 +45,7 @@ ul.posts li {
 }
 
 ul.bullet li {
-    font-size: 22px;
+    font-size: 2em;
     list-style: none;
 }    
 /* The side navigation menu */
