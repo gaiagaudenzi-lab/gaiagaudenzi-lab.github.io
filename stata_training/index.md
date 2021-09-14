@@ -1,7 +1,8 @@
 ---
-layout: default_sidebar_pages
+layout: default_sidebar
 title: "Stata Training"
 ---
+
 
 
 # Table of contents
@@ -871,5 +872,4 @@ There is only one way to get proficient with Stata: to have PATIENCE. Practice i
 # <a name="appendix1">Appendix: List of commands</a>
 
 [^1]: Long, J. Scott. 2009. The Workflow of Data Analysis Using
-Stata. College Station, TX: Stata Press.
-
+Stata. College Station, TX: Stata Press. 
