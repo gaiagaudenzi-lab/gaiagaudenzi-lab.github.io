@@ -837,23 +837,24 @@ graph export "$training_output/Bangladesh_map.png", as(png) replace
 There is only one way to get proficient with Stata: to have PATIENCE. Practice is fundamental to become better and better, do not get discouraged if you are not able to achieve what you want at the beginning. Stata prizes people who have patience and practice with perseverance. Hopefully this training and my source code will help you navigating the immense world for Data Cleaning, Processing and Analysis with Stata and will make the whole learning path easier and funnier! In the meantime, I leave you with some sources to learn Stata online that were extremely useful for me:
 
 * [Stata official website](https://www.stata.com/links/resources-for-learning-stata/){:target="_blank"}
-* <span style="font-size:20px">[UCLA website](https://stats.idre.ucla.edu/stata/){:target="_blank"}</span>
-* <span style="font-size:20px">[Princeton Stata tutorial](http://www.princeton.edu/~otorres/Stata/){:target="_blank"}</span>
-* <span style="font-size:20px">[Stata web books from UCLA](https://stats.idre.ucla.edu/stata/webbooks/){:target="_blank"}</span> 
-* <span style="font-size:20px">[Code and Data](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf){:target="_blank"}</span>
-* <span style="font-size:20px">[Getting Started in Data Analysis using Stata](https://www.princeton.edu/~otorres/StataTutorial.pdf){:target="_blank"}</span>
-* <span style="font-size:20px">[Stata Tutorial](https://econweb.ucsd.edu/~elib/120b/Stata%20Tutorial.pdf){:target="_blank"}</span>
-* <span style="font-size:20px">[Stata Basic](https://edge.edx.org/assets/courseware/v1/85458a6abe1e09fb891fb8f8610dffbd/c4x/BerkeleyX/CEGA101AIE/asset/Module_1.2_STATA_Basics.pdf){:target="_blank"}</span>
-* <span style="font-size:20px">[Getting Started with Stata, Princeton University](http://www.princeton.edu/~otorres/Stata/){:target="_blank"}</span>
-* <span style="font-size:20px">[Julian Reif's website](https://julianreif.com/software/){:target="_blank"}</span>
-* <span style="font-size:20px">[Alvaro Carril's website](https://acarril.github.io/resources){:target="_blank"}</span>
-* <span style="font-size:20px">[Stefania Lovo's website](https://sites.google.com/site/stefanialovo/stata?authuser=0){:target="_blank"}</span>
+* [UCLA website](https://stats.idre.ucla.edu/stata/){:target="_blank"}
+* [Princeton Stata tutorial](http://www.princeton.edu/~otorres/Stata/){:target="_blank"}
+* [Stata web books from UCLA](https://stats.idre.ucla.edu/stata/webbooks/){:target="_blank"}
+* [Code and Data](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf){:target="_blank"}
+* [Getting Started in Data Analysis using Stata](https://www.princeton.edu/~otorres/StataTutorial.pdf){:target="_blank"}
+* [Stata Tutorial](https://econweb.ucsd.edu/~elib/120b/Stata%20Tutorial.pdf){:target="_blank"}
+* [Stata Basic](https://edge.edx.org/assets/courseware/v1/85458a6abe1e09fb891fb8f8610dffbd/c4x/BerkeleyX/CEGA101AIE/asset/Module_1.2_STATA_Basics.pdf){:target="_blank"}
+* [Getting Started with Stata, Princeton University](http://www.princeton.edu/~otorres/Stata/){:target="_blank"}
+* [Julian Reif's website](https://julianreif.com/software/){:target="_blank"}
+* [Alvaro Carril's website](https://acarril.github.io/resources){:target="_blank"}
+* [Stefania Lovo's website](https://sites.google.com/site/stefanialovo/stata?authuser=0){:target="_blank"}
 
 # <a name="analysis">Data analysis</a>
 
-# References
+# <a name="analysis">References</a>
+
+[^1]: Long, J. Scott. 2009. The Workflow of Data Analysis Using Stata. College Station, TX: Stata Press. 
 
 # <a name="appendix1">Appendix: List of commands</a>
 
-[^1]: Long, J. Scott. 2009. The Workflow of Data Analysis Using
-Stata. College Station, TX: Stata Press. 
+
