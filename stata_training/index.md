@@ -3,22 +3,6 @@ layout: default_sidebar
 title: "Stata Training"
 ---
 
-
-
-# Table of contents
-* [Stata Basics](#stata_basics)
-* [Stata Course](#stata_course)
-	* [Setup](#setup)
-* [Data cleaning](#cleaning)
-* [Data processing](#processing)
-* [Data exporting](#exporting)
-* [Data visualization](#visualization)
-	* [Graphs](#graphs)
-	* [Graphs with error bars](#graphs_error)
-	* [Maps](#maps)   
-* [Data analysis](#analysis)
-* [Appendix: List of commands](#appendix1)
-
 # Stata training
 
 This "Stata guide" is intended to be a handy resource for you, and you can use it the way you want. It is divided in topic but it is not consequential, meaning you can jump from one chapter to another without any problems. 
@@ -852,7 +836,7 @@ graph export "$training_output/Bangladesh_map.png", as(png) replace
 # Great resources to learn Stata online
 There is only one way to get proficient with Stata: to have PATIENCE. Practice is fundamental to become better and better, do not get discouraged if you are not able to achieve what you want at the beginning. Stata prizes people who have patience and practice with perseverance. Hopefully this training and my source code will help you navigating the immense world for Data Cleaning, Processing and Analysis with Stata and will make the whole learning path easier and funnier! In the meantime, I leave you with some sources to learn Stata online that were extremely useful for me:
 
-* <span style="font-size:20px">[Stata official website](https://www.stata.com/links/resources-for-learning-stata/){:target="_blank"}</span>
+* [Stata official website](https://www.stata.com/links/resources-for-learning-stata/){:target="_blank"}
 * <span style="font-size:20px">[UCLA website](https://stats.idre.ucla.edu/stata/){:target="_blank"}</span>
 * <span style="font-size:20px">[Princeton Stata tutorial](http://www.princeton.edu/~otorres/Stata/){:target="_blank"}</span>
 * <span style="font-size:20px">[Stata web books from UCLA](https://stats.idre.ucla.edu/stata/webbooks/){:target="_blank"}</span> 
