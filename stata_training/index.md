@@ -848,6 +848,7 @@ There is only one way to get proficient with Stata: to have PATIENCE. Practice i
 * [Julian Reif's website](https://julianreif.com/software/){:target="_blank"}
 * [Alvaro Carril's website](https://acarril.github.io/resources){:target="_blank"}
 * [Stefania Lovo's website](https://sites.google.com/site/stefanialovo/stata?authuser=0){:target="_blank"}
+* [Alex Bhatt's manual](https://github.com/alexbhatt/stata_training/blob/master/training_manual.md){:target="_blank"}
 
 # <a name="analysis">Data analysis</a>
 
