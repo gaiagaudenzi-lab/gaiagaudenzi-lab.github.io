@@ -115,8 +115,6 @@ import excel using “yourdirectory/SampleExcelFile.xlsx”, clear
 
 `no; data in memory will be lost`
 
-# <a name="stata_course">Stata course</a>
-
 # <a name="setup">Setup</a>
 
 ## How to organize your workflow
