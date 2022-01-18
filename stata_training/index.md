@@ -32,7 +32,7 @@ You should use the interface only to look at variables, at the output etc. you s
 In each Stata dataset, each column corresponds to one variable and each row corresponds to one observation. It is up to you to understand whether each row corresponds to a distinct observation depending on your unit of observation. We will see afterwards the Stata commands that allow you to understand whether a variable (or a combination of variables) is an id for a specific dataset.
 
 The different colors of the variables in the data editor window gives us information on the format of the variable (whether it is string, numerical or a labeled variable).
--->
+ -->
 ### Commands 
 
 Stata works with commands. Every line of code you type on Stata corresponds to a command. So with every line, you are asking Stata to perform a different action. This is an example of two lines of command in Stata:
@@ -43,8 +43,9 @@ Stata works with commands. Every line of code you type on Stata corresponds to a
 ```
 "translated" in plain English, these two lines of code correspond to:
 
-<span style="font-size:20px">1. Open the dataset named "dataset.dta" that is on my laptop, specifically in the directory "/Users/gaiagaudenzi/Documents/Stata/"</span><br>
-<span style="font-size:20px">2. Browse through the variables that are inside this dataset</span>
+<!--<span style="font-size:20px"></span><br>-->
+* Open the dataset named "dataset.dta" that is on my laptop, specifically in the directory "/Users/gaiagaudenzi/Documents/Stata/"
+* Browse through the variables that are inside this dataset
 
 There are of course many many commands, depending on the operations you want to perform and on which variable. If you are not sure about which command you want to use, or how a command is supposed to be used, Stata will always help you. You just have to type
 
@@ -60,7 +61,7 @@ To let you know how the help command works, and what is the basic structure of a
 ```stata
 summarize [varlist] [if] [in] [weight] [, options]
 ```
- 
+
 
 Let’s start talking about how you can actually load datasets on Stata. The extension stata uses for its file is .dta, so the name of a dataset in Stata format will look like this: dataset.dta. However, you can import a wide variety of files with different formats into Stata (Excel, csv etc.)
 
