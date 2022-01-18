@@ -54,7 +54,7 @@ help
 ```
 followed by the name of the command (Fun fact: help is iteslf a command, that helps you understand other commands). Stata will open the documentation and show you some examples on how to use that command. Througout this training, I will make extensive use of the data documentation, so that you can get familiar with it and become more and more independent.
 
-## Structure of a command
+## <a name="structure_of_commands">Structure of a command</a>
 
 To let you know how the help command works, and what is the basic structure of a command as you see it on the Stata documentation, I take the code <code>summarize</code> as an example. It is a code that calculates for you the number of observations, the mean, the standard deviation, the minimum and the maximum of a variable. By typing <code>help summarize</code> we get the syntax of this code:
 
@@ -65,7 +65,7 @@ summarize [varlist] [if] [in] [weight] [, options]
 
 Let’s start talking about how you can actually load datasets on Stata. The extension stata uses for its file is .dta, so the name of a dataset in Stata format will look like this: dataset.dta. However, you can import a wide variety of files with different formats into Stata (Excel, csv etc.)
 
-## Directories
+##<a name="directories">Directories</a>
 
 How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a *.dta* file into Stata, you will use the following syntax:
 
@@ -104,7 +104,7 @@ To create directories (this will create folders into your laptop! In this exampl
 mkdir “/Users/gaiagaudenzi/Documents/NewDirectory”
 ```
 
-## Importing data from Stata and from external sources (.xlsx, .csv, etc.)
+## <a name="importing">Importing data from Stata and from external sources (.xlsx, .csv, etc.)</a>
 
 We have already seen that to load a dataset into Stata that is already in .dta format, the command is `use` followed by the directory and the name of the file. What if we want to import an Excel file?
 
