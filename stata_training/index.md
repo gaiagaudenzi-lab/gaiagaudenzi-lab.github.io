@@ -65,7 +65,7 @@ summarize [varlist] [if] [in] [weight] [, options]
 
 Let’s start talking about how you can actually load datasets on Stata. The extension stata uses for its file is .dta, so the name of a dataset in Stata format will look like this: dataset.dta. However, you can import a wide variety of files with different formats into Stata (Excel, csv etc.)
 
-##<a name="directories">Directories</a>
+## <a name="directories">Directories</a>
 
 How can you locate on your laptop the files you will load into Stata? With the directory of the file itself! For every file you import/load in Stata you have to specify the directory, to tell Stata where exactly it has to find the file. So, to load a *.dta* file into Stata, you will use the following syntax:
 
