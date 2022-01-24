@@ -730,7 +730,7 @@ sample 200, count
 
 ## <a name="graphs_error">Graphs with error bar</a>
 
-[graph_errorbar]({{site.url}}/images/graph_errorbar.png)
+![graph_errorbar]({{site.url}}/images/graph_errorbar.png)
 
 Creating a graph with error bar in Stata involves some transformation of the dataset. If you are not familiar with collapse or reshape, please visit the corresponding section. Here we would like to create a graph with the corresponding error bars. Let’s use the built-in dataset ``city temp.dta```
 to show how to build a graph with error bar. 
