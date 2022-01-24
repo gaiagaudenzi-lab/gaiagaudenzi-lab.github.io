@@ -730,8 +730,50 @@ sample 200, count
 
 ## <a name="graphs_error">Graphs with error bar</a>
 
+[graph_errorbar]({{site.url}}/images/graph_errorbar.png)
+
+Creating a graph with error bar in Stata involves some transformation of the dataset. If you are not familiar with collapse or reshape, please visit the corresponding section. Here we would like to create a graph with the corresponding error bars. Let’s use the built-in dataset ``city temp.dta```
+to show how to build a graph with error bar. 
 ```stata
-* 1.8.1 Graphs with error bars
+* Load data
+sysuse citytemp.dta
+```
+We see that the dataset records different temperatures in two times of the year: January and July. We would like to create a bar graph that shows the average temperatures in the 2 months by region, but also showing confidence intervals.
+We start forming our dataset to create the graph:
+```stata
+collapse (mean) mean_tempjan=tempjan mean_tempjul=tempjul (sd) sd_tempjan=tempjan sd_tempjul=tempjul (count) n_tempjan=tempjan n_tempjul=tempjul, by(region)
+
+reshape long mean_temp sd_temp n_temp, i(region) j(month) str
+```
+Then, we calculate upper and lower values of confidence intervals
+```
+generate hi_temp = mean_temp + invttail(n-1,0.025)*(sd_temp / sqrt(n_temp))
+generate lower_temp = mean_temp - invttail(n-1,0.025)*(sd_temp / sqrt(n_temp))
+
+```
+Now we generate a “fake” x-axis, which will allow us to plot the bars exactly in the order we want
+```
+generate xaxis = 1 if region == 1 & month == "jan"
+replace  xaxis = 2 if region == 1 & month == "jul"
+replace  xaxis = 3 if region == 2 & month == "jan"
+replace  xaxis = 4 if region == 2 & month == "jul"
+replace  xaxis = 5 if region == 3 & month == "jan"
+replace  xaxis = 6 if region == 3 & month == "jul"
+replace  xaxis = 7 if region == 4 & month == "jan"
+replace  xaxis = 8 if region == 4 & month == "jul"
+```
+And we are ready to generate the graph:
+```
+twoway (bar mean_temp xaxis if region == 1) ///
+       (bar mean_temp xaxis if region == 2) ///
+       (bar mean_temp xaxis if region == 3) ///
+       (bar mean_temp xaxis if region == 4) ///
+       (rcap hi_temp lowr_temp xaxis, color(black)), ///
+       legend(row(1) order(1 "NE" 2 "N Cntrl" 3 "South" 4 "West") ) ///
+       xlabel( 1 "Jan" 2 "Jul" 3 "Jan" 4 "Jul" 5 "Jan" 6 "Jul" 7 "Jan" 8 "Jul") ///
+	   graphregion(color(white)) ///
+       xtitle("Months") ytitle("Mean temperature")
+
 ```
 
 ## <a name="maps">Maps</a>
