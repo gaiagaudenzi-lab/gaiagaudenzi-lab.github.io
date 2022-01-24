@@ -779,8 +779,12 @@ twoway (bar mean_temp xaxis if region == 1) ///
 ```
 
 ## <a name="maps">Maps</a>
-Did you know you can create simple maps in Stata? This is thanks to the absolutely awesome people that invented the spmap command. 
+Did you know you can create simple maps in Stata? This is thanks to the absolutely awesome people that invented the spmap command. Here below the code to create this simple map of Bangladesh. I created this map when I was in Bangladesh right before a data collection, to visually see in which districts it was impossible to go during the monsoon season in that specific year. 
+
 <img src="{{site.url}}/images/Bangladesh_map.png" alt="Bangladesh map" class="center" style="height: 699px; width:553px;"/>
+
+The first thing you need to do, is to download a shapefile with the administrative division that interests you (just google Country X shapefile and download). You will need to have a file with the extension .shp, which you can convert in .dta and exploit for graphs. Let's see all the steps below:
+
 ```code
 
 * 1 STEP: Convert shapefile to .dta
@@ -869,9 +873,10 @@ Did you know you can create simple maps in Stata? This is thanks to the absolute
 	* 1.7 Create map
 	spmap var2 using "$maps/BGD_zilacoor.dta" , ///
 	id(id) clmethod(unique)  ocolor(gs8 ..) fcolor(Pastel2) ndocolor(gs8 ..) ///
-name(base, replace) ndlab("Available districts") ///
-title({bf:Logistically unfeasible districts}) ///
-label(data("$maps/BGD_label_coor.dta") label(NAME_2) xcoord(_X) ycoord(_Y) length(20) size(*0.5) gap(*1) color(black)) legend(pos(7))
+	name(base, replace) ndlab("Available districts") ///
+	title({bf:Logistically unfeasible districts}) ///
+	label(data("$maps/BGD_label_coor.dta") ///
+	label(NAME_2) xcoord(_X) ycoord(_Y) length(20) size(*0.5) gap(*1) color(black)) legend(pos(7))
 
 graph export "$training_output/Bangladesh_map.png", as(png) replace
 ```
