@@ -780,7 +780,7 @@ twoway (bar mean_temp xaxis if region == 1) ///
 
 ## <a name="maps">Maps</a>
 Did you know you can create simple maps in Stata? This is thanks to the absolutely awesome people that invented the spmap command. 
-
+<img src="{{site.url}}/images/Bangladesh_map.png" alt="Bangladesh map" style="height: 100px; width:100px;"/>
 ```code
 
 * 1 STEP: Convert shapefile to .dta
