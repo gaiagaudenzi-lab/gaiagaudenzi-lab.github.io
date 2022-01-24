@@ -741,7 +741,9 @@ sysuse citytemp.dta
 We see that the dataset records different temperatures in two times of the year: January and July. We would like to create a bar graph that shows the average temperatures in the 2 months by region, but also showing confidence intervals.
 We start forming our dataset to create the graph:
 ```stata
-collapse (mean) mean_tempjan=tempjan mean_tempjul=tempjul (sd) sd_tempjan=tempjan sd_tempjul=tempjul (count) n_tempjan=tempjan n_tempjul=tempjul, by(region)
+collapse (mean) mean_tempjan=tempjan mean_tempjul=tempjul ///
+	 (sd) sd_tempjan=tempjan sd_tempjul=tempjul ///
+	 (count) n_tempjan=tempjan n_tempjul=tempjul, by(region)
 
 reshape long mean_temp sd_temp n_temp, i(region) j(month) str
 ```
