@@ -2,6 +2,10 @@ body {
     margin: 10px auto;
     width: 95%;
 }
+content {
+  max-width: 500px;
+  margin: auto;
+}
 container {
     width: 100%; /* this make container fluid*/
     height: auto;
